@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Вход</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+    <div class="content_fullscreen">
+        <div class="content_wrapper_center">
+            <ion-item>
+                <ion-label position="stacked">Логин</ion-label>
+                <ion-input type="text" name="email" placeholder="Введите логин здесь" [(ngModel)]="login"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="stacked">Пароль</ion-label>
+                <ion-input type="password" name="password" placeholder="Введите пароль здесь"
+                           [(ngModel)]="password"></ion-input>
+            </ion-item>
+<!--            <ion-input type="hidden" name="_csrf_token" value="{{ loginCsrfToken }}"></ion-input>-->
+            <ion-button expand="full" (click)="doLogin()">Войти</ion-button>
+        </div>
+    </div>
+
+</ion-content>

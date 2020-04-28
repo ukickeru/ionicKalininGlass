@@ -1,0 +1,44 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Вкладки</ion-title>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/home"></ion-back-button>
+        </ion-buttons>
+        <ion-buttons slot="end">
+        <ion-menu-button auto-hide="false"></ion-menu-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-tabs>
+        <ion-tab-bar slot="bottom">
+
+            <ion-tab-button tab="call">
+                <ion-icon name="call-outline"></ion-icon>
+                <ion-label>Call</ion-label>
+            </ion-tab-button>
+
+            <ion-tab-button tab="calendar">
+                <ion-icon name="calendar-outline"></ion-icon>
+                <ion-label>Calendar</ion-label>
+            </ion-tab-button>
+
+        </ion-tab-bar>
+    </ion-tabs>
+
+</ion-content>
+
+<!--<ion-footer>-->
+<!--    <ion-toolbar>-->
+<!--        <ion-segment value="tab1">-->
+<!--            <ion-segment-button value="tab1" routerLink="/tabs/call">-->
+<!--                <ion-icon name="call-outline"></ion-icon>-->
+<!--            </ion-segment-button>-->
+<!--            <ion-segment-button value="tab2" routerLink="/tabs/calendar">-->
+<!--                <ion-icon name="calendar-outline"></ion-icon>-->
+<!--            </ion-segment-button>-->
+<!--        </ion-segment>-->
+<!--    </ion-toolbar>-->
+<!--</ion-footer>-->

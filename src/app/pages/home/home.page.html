@@ -1,0 +1,28 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-thumbnail slot="start">
+            <img src="../assets/img/favicon/mstile-70x70.png">
+        </ion-thumbnail>
+        <ion-title>KalininGlass</ion-title>
+        <ion-buttons slot="end">
+            <ion-menu-button auto-hide="false"></ion-menu-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+    <div id="container">
+        <strong>My new Ionic App</strong>
+        <p>{{ text }}</p>
+        <div>
+            <ion-button (click)="onChangeText()">Change text</ion-button>
+        </div>
+        <p>{{ data }}</p>
+        <div>
+            <ion-button (click)="loadData()" color="success">Load data</ion-button>
+            <ion-button (click)="clearData()" color="warning">Clear data</ion-button>
+        </div>
+    </div>
+
+</ion-content>
